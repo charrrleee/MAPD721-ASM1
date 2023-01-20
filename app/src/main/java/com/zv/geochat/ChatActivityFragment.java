@@ -72,9 +72,10 @@ public class ChatActivityFragment extends Fragment {
         btnSendConnectErrorMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Sending to Chat Service: Connect Error: ", Snackbar.LENGTH_LONG)
+                String studentId = "93";
+                Snackbar.make(view, "Sending to Chat Service: Connect Error: " + studentId , Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                sendStudentId("93");
+                sendStudentId(studentId);
             }
         });
 
